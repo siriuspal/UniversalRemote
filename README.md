@@ -13,16 +13,23 @@ For above resource, the format of code was different than what I captured direct
 ### Setup:
 #### Hardware:
 Generic ESP-WROOM-32 Development Board with USB port
+
 Generic IR LED
+
 MOSFET, Resistor, Wires
+
 USB Cable
+
 5V USB Power Supply
 #### Enclosure:
 Custom 3D Printed Enclosure designed using OnShape
 #### Software:
 MicroPython ver 1.13 (esp32-idf3-20200902-v1.13.bin) https://micropython.org/download/esp32/
+
 umqtt.robust2 (and umqtt.simple2) https://github.com/fizista/micropython-umqtt.robust2
 #### Other:
 Raspberry Pi as MQTT Broker
+
 MQTT Dashboard as Remote https://play.google.com/store/apps/details?id=com.app.vetru.mqttdashboard&hl=en_IN&gl=US
+
 Wi-Fi Router
