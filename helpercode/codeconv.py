@@ -6,6 +6,10 @@
 # Example:
 # InStart internet code is 20DFDF20, required output is 04FB
 # EZAdj internet code is 20DFFF00, required output is 04FF
+# This represents only non-inverted address and data bits.
+# Actual data sent over IR is Address, Address Inverted (Logical Not), Command, Command Inverted
+# A good document is available here https://techdocs.altium.com/display/FPGA/NEC+Infrared+Transmission+Protocol
+
 
 import numpy as np
 
