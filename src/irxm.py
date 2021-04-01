@@ -57,6 +57,11 @@ def send_command(add, com, comn=None):
     send_byte(add, lst)
     send_byte(~add, lst)
     send_byte(com, lst)
+    
+    
+    # I identified some keys on Yamaha remote did not send exact invert of command, instead some bits were peculiar.
+    # This deviated from NEC protocol, but work around was simple.
+    # If peculiar code is present that's sent, otherwise inverted code is sent.
     if comn is None:
         send_byte(~com, lst)
     else:
